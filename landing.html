@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Landing Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4c84ff, #6a11cb);
+      padding: 1.5rem;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    section.hero {
+      padding: 4rem 1rem;
+      text-align: center;
+      background: white;
+    }
+
+    section.hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section.hero p {
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      color: #555;
+    }
+
+    section.hero a {
+      padding: 0.8rem 1.5rem;
+      background: #4c84ff;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    section.hero a:hover {
+      background: #3b6bd1;
+    }
+
+    section.features {
+      padding: 3rem 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-box {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .feature-box:hover {
+      transform: scale(1.05);
+    }
+
+    .feature-box h3 {
+      margin: 0.8rem 0;
+    }
+
+    .feature-box p {
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      section.hero h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>Discover what we can do for you</p>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <h2>Build Something Amazing</h2>
+    <p>Our platform helps you launch ideas faster, with powerful tools and simple design that scales with you.</p>
+    <a href="#features">Learn More</a>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="feature-box">
+      <h3>🚀 Fast</h3>
+      <p>Blazing speed for your site or app, so your visitors never wait.</p>
+    </div>
+    <div class="feature-box">
+      <h3>🔒 Secure</h3>
+      <p>Your data is protected with the latest security best practices.</p>
+    </div>
+    <div class="feature-box">
+      <h3>💡 Innovative</h3>
+      <p>New features and updates every week to help you grow.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 My Landing Page. All rights reserved.
+  </footer>
+
+</body>
+</html>
